@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.trendingrepo.databinding.FragmentTrendingRepoListingBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +22,9 @@ class TrendingRepoListingFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private var fragmentTrendingRepoListingBinding: FragmentTrendingRepoListingBinding? = null
+    private val binding get() = fragmentTrendingRepoListingBinding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -32,9 +36,16 @@ class TrendingRepoListingFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_trending_repo_listing, container, false)
+        fragmentTrendingRepoListingBinding = FragmentTrendingRepoListingBinding.inflate(inflater, container, false)
+        binding.btnRetry.visibility = View.VISIBLE
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        fragmentTrendingRepoListingBinding = null
     }
 
     companion object {
