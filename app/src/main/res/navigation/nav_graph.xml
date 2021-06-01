@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/trendingRepoListingFragment">
+
+    <fragment
+        android:id="@+id/trendingRepoListingFragment"
+        android:name="com.example.trendingrepo.TrendingRepoListingFragment"
+        android:label="fragment_trending_repo_listing"
+        tools:layout="@layout/fragment_trending_repo_listing">
+        <action
+            android:id="@+id/action_trendingRepoListingFragment_to_repoDetailsFragment"
+            app:destination="@id/repoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoDetailsFragment"
+        android:name="com.example.trendingrepo.RepoDetailsFragment"
+        android:label="fragment_repo_details"
+        tools:layout="@layout/fragment_repo_details" />
+</navigation>
