@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.NavHostFragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.trendingrepo.databinding.FragmentTrendingRepoListingBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -40,6 +42,8 @@ class TrendingRepoListingFragment : Fragment() {
         // Inflate the layout for this fragment
         fragmentTrendingRepoListingBinding = FragmentTrendingRepoListingBinding.inflate(inflater, container, false)
         binding.btnRetry.visibility = View.VISIBLE
+        binding.rvTrendingRepo.layoutManager = LinearLayoutManager(context)
+        binding.rvTrendingRepo.adapter = TrendingRepoListingAdapter()
         return binding.root
     }
 
