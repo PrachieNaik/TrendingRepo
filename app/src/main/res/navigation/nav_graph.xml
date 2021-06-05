@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/trendingRepoListingFragment"
-        android:name="com.example.trendingrepo.TrendingRepoListingFragment"
+        android:name="com.example.trendingrepo.ui.TrendingRepoListingFragment"
         android:label="fragment_trending_repo_listing"
         tools:layout="@layout/fragment_trending_repo_listing">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/repoDetailsFragment"
-        android:name="com.example.trendingrepo.RepoDetailsFragment"
+        android:name="com.example.trendingrepo.ui.RepoDetailsFragment"
         android:label="fragment_repo_details"
         tools:layout="@layout/fragment_repo_details" />
 </navigation>

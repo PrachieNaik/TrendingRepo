@@ -1,4 +1,4 @@
-package com.example.trendingrepo
+package com.example.trendingrepo.data
 
 import com.google.gson.annotations.SerializedName
 

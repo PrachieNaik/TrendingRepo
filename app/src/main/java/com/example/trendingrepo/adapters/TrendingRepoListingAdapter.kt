@@ -1,8 +1,9 @@
-package com.example.trendingrepo
+package com.example.trendingrepo.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.trendingrepo.data.Repo
 import com.example.trendingrepo.databinding.ItemTrendingRepoBinding
 
 class TrendingRepoListingAdapter : RecyclerView.Adapter<TrendingRepoListingAdapter.TrendingRepoVH>() {

@@ -1,8 +1,9 @@
-package com.example.trendingrepo
+package com.example.trendingrepo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
+import com.example.trendingrepo.R
 import com.example.trendingrepo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
